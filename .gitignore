@@ -1,0 +1,43 @@
+﻿# Dependencies
+node_modules/
+target/
+build/
+dist/
+.gradle/
+*.class
+
+# Environment & Secrets
+.env
+.env.*
+*.env
+application-secret.properties
+application-local.properties
+secrets/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test output
+test-results/
+surefire-reports/
+
+# Maven wrapper
+!.mvn/wrapper/maven-wrapper.jar
+
+# Railway / Cloud
+.railway/
