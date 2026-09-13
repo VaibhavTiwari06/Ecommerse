@@ -86,7 +86,7 @@ export default function CartPage() {
             // Both ApiCartItem and GuestCartItem have bookId, title, coverImageUrl, price, quantity
             const bookId = item.bookId;
             const itemTotal =
-              'itemTotal' in item ? item.itemTotal : item.price * item.quantity;
+              'itemTotal' in item ? (item as { itemTotal: number }).itemTotal : item.price * item.quantity;
 
             return (
               <div key={bookId} className="cart-row">

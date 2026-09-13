@@ -81,8 +81,7 @@ export default function SearchPage() {
       if (filterMinPrice) params.minPrice = filterMinPrice;
       if (filterMaxPrice) params.maxPrice = filterMaxPrice;
       if (filterInStock) params.inStock = true;
-      request = apiClient.get<PagedResponse<BookSummary>>('/api/books', params);
-      request
+      apiClient.get<PagedResponse<BookSummary>>('/api/books', params)
         .then(setBooks)
         .catch(() => setBooks(null))
         .finally(() => setLoading(false));
