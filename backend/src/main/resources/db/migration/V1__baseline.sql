@@ -1,0 +1,16 @@
+-- =============================================================
+-- V1__baseline.sql
+-- Migration: V1 — Baseline marker
+-- Milestone: M1 (TASK-FOUND-002)
+-- =============================================================
+-- This file is intentionally empty of DDL.
+--
+-- WHY THIS FILE EXISTS:
+--   Flyway tracks which migrations have been applied by recording
+--   their version numbers in the flyway_schema_history table.
+--   V1 is the starting point — a "you are here" marker.
+--   All actual table creation starts from V2 onwards.
+--
+-- RULE: Never modify this file after it has been applied to any
+-- database. Create a new V{n} file for every schema change.
+-- =============================================================
